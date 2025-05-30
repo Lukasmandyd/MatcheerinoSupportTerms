@@ -24,8 +24,8 @@
         p, li {
             margin-bottom: 10px;
         }
-        strong.placeholder {
-            color: red;
+        strong.placeholder { /* Kept if you want to highlight specific owner-filled parts later */
+            color: #c0392b; /* Changed to a less alarming red */
             font-weight: bold;
         }
         ul, ol {
@@ -38,109 +38,168 @@
         a:hover {
             text-decoration: underline;
         }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
     </style>
 </head>
 <body>
 
-    <h1>Privacy Policy for Matcherino Support Discord Bot</h1>
-    <p><strong>Last Updated:</strong> <strong class="placeholder">5.13.2025</strong></p>
+    <div class="container">
+        <h1>Privacy Policy for Matcherino Support Discord Bot</h1>
+        <p><strong>Last Updated:</strong> 5.13.2025</p> <!-- Assuming this date is correct as per your template -->
 
-    <p>This Privacy Policy describes how <strong class="placeholder">Team DYD</strong> ("we," "us," or "our") collects, uses, and shares information in connection with your use of the Matcherino Support Discord Bot (the "Bot"). By adding, inviting, or using the Bot in any Discord server, you agree to the terms of this Privacy Policy.</p>
-    <p>If you do not agree with this Privacy Policy, please do not use the Bot.</p>
+        <p>Welcome to Matcherino Support! This Privacy Policy explains how Matcherino Support ("the Bot," "we," "us," or "our") collects, uses, and shares information when you interact with it on Discord.</p>
+        <p>By adding or using Matcherino Support in your Discord server, or by interacting with its commands, you agree to the collection, use, and sharing of your information as described in this policy.</p>
+        <p>If you do not agree with this Privacy Policy, please do not use the Bot.</p>
 
-    <h2>1. Information We Collect</h2>
-    <p>We collect information necessary for the Bot to function and provide its services. This may include:</p>
-    <ul>
-        <li>
-            <strong>Information You Provide Directly:</strong>
-            <ul>
-                <li><strong>Commands and Content:</strong> When you interact with the Bot by sending commands or messages to it, we collect the content of those communications.</li>
-                <li><strong>Configuration Data:</strong> If the Bot allows for server-specific configurations (e.g., custom prefixes, enabled/disabled features), we store these settings.</li>
-            </ul>
-        </li>
-        <li>
-            <strong>Information Collected Automatically via Discord API:</strong>
-            <ul>
-                <li><strong>User Information:</strong> Your Discord User ID. We do <strong>not</strong> typically collect or store your Discord username or discriminator directly unless it's part of a command log for troubleshooting or moderation, and even then, it's used in line with Discord's own policies.</li>
-                <li><strong>Server Information:</strong> The Discord Server ID and Channel ID where the Bot is used or commands are issued. This is necessary to deliver responses and manage Bot functionality within specific servers and channels.</li>
-                <li><strong>Usage Data:</strong> We may log commands used, frequency of use, and general interaction patterns to understand how the Bot is being used, to troubleshoot issues, and to improve its functionality. This data is typically aggregated and anonymized where possible.</li>
-            </ul>
-        </li>
-        <li>
-            <strong>Information We Do NOT Intentionally Collect:</strong>
-            <ul>
-                <li>We do not intentionally collect any sensitive personal information, such as your real name (unless it's your Discord username), address, phone number, email address (unless you provide it directly for support), financial information, or government-issued identifiers through the Bot's standard operations.</li>
-                <li>The Bot does not read or store messages in your server that are not direct commands or mentions to the Bot.</li>
-            </ul>
-        </li>
-    </ul>
+        <h2>1. Information We Collect</h2>
+        <p>The Bot collects information in several ways:</p>
+        <ul>
+            <li>
+                <strong>Information You Provide Directly:</strong>
+                <ul>
+                    <li><strong>Commands & Interactions:</strong> When you use commands, we collect the content of your commands, including any user mentions, role mentions, channel mentions, text, IDs, dates, or URLs you provide (e.g., for sending messages, warnings, setting up giveaways, registration, claiming tickets, providing feedback, applying for experimental features).</li>
+                    <li><strong>Registration Data:</strong> For the team registration system, this includes team names (optional), user mentions, and confirmation responses from nominated team members.</li>
+                    <li><strong>Giveaway Entries:</strong> User IDs of those who react to enter giveaways.</li>
+                    <li><strong>Support Ratings:</strong> Your rating (1-5) and the staff member you are rating.</li>
+                    <li><strong>Experimental Feature Applications/Feedback:</strong> Server IDs, invite links, reasons for application, and feedback content.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Information Collected Automatically (as part of Discord's functionality and Bot operation):</strong>
+                <ul>
+                    <li><strong>User Information:</strong> Discord User IDs, usernames/nicknames, and avatars.</li>
+                    <li><strong>Server (Guild) Information:</strong> Server IDs, server names, channel IDs, channel names, role IDs, role names, server member lists (for user/role mentions, invite tracking, and server statistics).</li>
+                    <li><strong>Message Information:</strong> Message IDs, message content (specifically in registration channels or when processing historical registrations), message timestamps, and reaction data (for giveaways, ratings).</li>
+                    <li><strong>Invite Data:</strong> For giveaway requirements, we track invite codes, their usage counts, and the inviter's User ID and the join timestamps of members who use those invites.</li>
+                    <li><strong>Command Usage:</strong> We log command invocations, including the user who invoked the command, the command used, and the server/channel it was used in, for administrative, debugging, and security purposes.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Configuration Data (provided by server administrators/Bot Owner):</strong>
+                <ul>
+                    <li><strong>Server-Specific Settings:</strong> For various features like registration (channel, role, password info channel), ticket greetings (message, enabled status), staff roles, giveaway parameters, and experimental feature access.</li>
+                    <li><strong>Bot Owner Configuration:</strong> Log channel IDs, special user IDs with elevated privileges, support server/channel IDs for experimental features.</li>
+                </ul>
+            </li>
+        </ul>
 
-    <h2>2. How We Use Your Information</h2>
-    <p>We use the information we collect for the following purposes:</p>
-    <ul>
-        <li><strong>To Provide and Maintain the Bot:</strong> To operate the Bot, respond to your commands, and deliver its features and functionalities.</li>
-        <li><strong>To Improve the Bot:</strong> To understand how users interact with the Bot, identify areas for improvement, develop new features, and fix bugs.</li>
-        <li><strong>To Provide Support:</strong> To respond to your inquiries, troubleshoot problems, and provide assistance.</li>
-        <li><strong>To Enforce Our Terms:</strong> To enforce our Terms of Service and prevent abuse of the Bot.</li>
-        <li><strong>For Security Purposes:</strong> To detect and prevent fraudulent or malicious activity.</li>
-        <li><strong>To Comply with Legal Obligations:</strong> To comply with applicable laws, regulations, or legal processes.</li>
-    </ul>
+        <h2>2. How We Use Your Information</h2>
+        <p>We use the collected information for the following purposes:</p>
+        <ul>
+            <li><strong>To Provide Bot Functionality:</strong>
+                <ul>
+                    <li>To operate the team registration system, including sending confirmation DMs and assigning roles.</li>
+                    <li>To manage and run giveaways, including validating entries based on server membership or invite requirements.</li>
+                    <li>To send messages or DMs to users or channels as instructed by authorized users (e.g., <code>/dm</code>, <code>/send_msg</code>).</li>
+                    <li>To facilitate support ticket ratings and claims.</li>
+                    <li>To provide administrative dashboards for Bot Owners to manage server configurations.</li>
+                    <li>To automatically set up registration channels and roles (<code>/autosetup</code>).</li>
+                    <li>To process historical registration messages (<code>/processreg</code>).</li>
+                    <li>To send automated greetings in newly created ticket channels.</li>
+                    <li>To allow staff to issue and track user warnings.</li>
+                    <li>To manage access to experimental features, process applications, and collect feedback.</li>
+                    <li>To list servers and generate invites for the Bot Owner.</li>
+                    <li>To display bot and server statistics.</li>
+                </ul>
+            </li>
+            <li><strong>To Improve and Maintain the Bot:</strong>
+                <ul>
+                    <li>To monitor usage, diagnose issues, and improve the Bot's performance and features.</li>
+                    <li>For logging, security, and administrative purposes.</li>
+                </ul>
+            </li>
+            <li><strong>To Communicate with You:</strong>
+                <ul>
+                    <li>To respond to your commands or requests.</li>
+                    <li>To notify users about warnings, giveaway results, or registration status.</li>
+                </ul>
+            </li>
+        </ul>
 
-    <h2>3. How We Share Your Information</h2>
-    <p>We do not sell your personal information. We may share information under the following circumstances:</p>
-    <ul>
-        <li><strong>With Service Providers:</strong> We may share information with third-party service providers who help us operate, maintain, and improve the Bot (e.g., hosting providers). These providers are contractually obligated to protect your information and use it only for the services they provide to us.</li>
-        <li><strong>For Legal Reasons:</strong> We may disclose your information if required to do so by law or in the good faith belief that such action is necessary to:
-            <ul>
-                <li>Comply with a legal obligation or a request from law enforcement.</li>
-                <li>Protect and defend our rights or property.</li>
-                <li>Prevent or investigate possible wrongdoing in connection with the Bot.</li>
-                <li>Protect the personal safety of users of the Bot or the public.</li>
-            </ul>
-        </li>
-        <li><strong>With Your Consent:</strong> We may share your information with third parties if we have your explicit consent to do so.</li>
-        <li><strong>Aggregated or Anonymized Data:</strong> We may share aggregated or anonymized information that does not directly identify you with third parties for research, analysis, or other purposes.</li>
-    </ul>
+        <h2>3. How We Share Your Information</h2>
+        <p>Your information may be shared in the following ways:</p>
+        <ul>
+            <li><strong>With Server Members (as part of Bot functionality):</strong>
+                <ul>
+                    <li>Giveaway winners are announced publicly in the server.</li>
+                    <li>Information about claimed tickets (who claimed) is visible in the channel.</li>
+                    <li>Warnings issued to users may be announced in the channel (depending on command output) and are DMed to the warned user.</li>
+                    <li>Information about team registrations (e.g., confirmations, success) may be DMed to involved team members or the applicant.</li>
+                    <li>Messages sent via the Bot (e.g., using <code>/send_msg</code>) will be visible in the target channel.</li>
+                    <li>Leaderboards for support ratings are visible to users in the server.</li>
+                </ul>
+            </li>
+            <li><strong>With Designated Log Channels:</strong>
+                <ul>
+                    <li>Certain actions, such as sending DMs via the <code>/dm</code> command or messages via <code>/send_msg</code>, and experimental feature applications/feedback, are logged to specific, pre-configured Discord channels for administrative review. These logs include author, target, and message content.</li>
+                </ul>
+            </li>
+            <li><strong>With the Bot Owner(s)/Special Users:</strong>
+                <ul>
+                    <li>Bot Owners and users designated with special access privileges have access to administrative features, which may include viewing server configurations, server lists, and bot statistics.</li>
+                </ul>
+            </li>
+            <li><strong>As Required by Law:</strong> We may disclose your information if required to do so by law or in response to valid requests by public authorities.</li>
+            <li><strong>No Sale of Data:</strong> We do not sell your personal information to third parties.</li>
+        </ul>
 
-    <h2>4. Data Retention</h2>
-    <p>We retain collected information for as long as necessary to provide the Bot's services, fulfill the purposes outlined in this Privacy Policy, or as required by law.</p>
-    <ul>
-        <li>Command logs or usage data may be retained for a period necessary for troubleshooting, improvement, and security analysis.</strong>).</li>
-        <li>Server configuration data is retained as long as the Bot is active on that server, or until it is explicitly removed or reset.</li>
-    </ul>
-    <p>You can request the deletion of specific data associated with your User ID or server by contacting us (see Section 9).</p>
+        <h2>4. Data Storage and Security</h2>
+        <ul>
+            <li><strong>Local Files:</strong> Most configuration data, warnings, ratings, claims, registration settings, and pending registrations are stored in JSON files on the server where the Bot is hosted (typically in a <code>data/</code> subdirectory or root directory for files like <code>staff_roles.json</code>, <code>warnings.json</code>, <code>ticket_greeting_settings.json</code>).</li>
+            <li><strong>In-Memory Data:</strong> Some data, such as active giveaway details, invite caches, and DM history for the <code>/read</code> command, is stored in the Bot's memory and is lost when the Bot restarts.</li>
+            <li><strong>Log Files:</strong> Bot operational logs are stored in a <code>logs/</code> directory on the server where the Bot is hosted.</li>
+            <li><strong>Security:</strong> We take reasonable measures to protect the information we collect. However, no internet-based service is 100% secure.</li>
+            <li><strong>Discord's Storage:</strong> Information transmitted through Discord (messages, user profiles, etc.) is also stored by Discord according to its own Privacy Policy.</li>
+        </ul>
 
-    <h2>5. Your Data Rights and Choices</h2>
-    <p>Depending on your jurisdiction, you may have certain rights regarding your personal information. These may include:</p>
-    <ul>
-        <li><strong>Access:</strong> The right to request access to the personal information we hold about you.</li>
-        <li><strong>Correction:</strong> The right to request correction of inaccurate personal information.</li>
-        <li><strong>Deletion:</strong> The right to request deletion of your personal information, subject to certain exceptions (e.g., if we are required to retain it by law or for legitimate operational purposes).</li>
-        <li><strong>Object to Processing:</strong> The right to object to our processing of your personal information in certain circumstances.</li>
-    </ul>
-    <p>To exercise these rights, please contact us using the details provided in Section 9. Please note that removing the Bot from your server will stop future data collection from that server. Some data may reside on Discord's platform and is subject to Discord's own Privacy Policy and data management tools.</p>
+        <h2>5. Data Retention</h2>
+        <ul>
+            <li><strong>Configuration Data & Persistent Records:</strong> Data stored in JSON files (like warnings, ratings, server settings) is retained as long as the Bot is operational or until it is explicitly cleared or overwritten by Bot commands or manual intervention.</li>
+            <li><strong>In-Memory Data:</strong> Retained only for the current session of the Bot and is cleared upon restart.</li>
+            <li><strong>Logs:</strong> Bot operational logs and logs sent to designated Discord channels are retained according to the logging configuration and Discord's policies, respectively.</li>
+            <li><strong>Pending Registrations:</strong> Cleared after successful processing, cancellation, or timeout (e.g., 24 hours for confirmation).</li>
+        </ul>
 
-    <h2>6. Data Security</h2>
-    <p>We take reasonable measures to protect the information we collect from loss, theft, misuse, and unauthorized access, disclosure, alteration, and destruction.</strong>. However, no internet or email transmission is ever fully secure or error-free, so you should take special care in deciding what information you send to us or the Bot.</p>
+        <h2>6. Your Data Rights and Choices</h2>
+        <p>Depending on your jurisdiction, you may have certain rights regarding your personal information. These may include:</p>
+        <ul>
+            <li><strong>Access:</strong> The right to request access to the personal information we hold about you.</li>
+            <li><strong>Correction:</strong> The right to request correction of inaccurate personal information.</li>
+            <li><strong>Deletion:</strong> The right to request deletion of your personal information, subject to certain exceptions (e.g., if we are required to retain it by law or for legitimate operational purposes).</li>
+            <li><strong>Object to Processing:</strong> The right to object to our processing of your personal information in certain circumstances.</li>
+        </ul>
+        <p>To exercise these rights, please contact us using the details provided in Section 9. Please note that removing the Bot from your server will stop future data collection from that server. Some data may reside on Discord's platform and is subject to Discord's own Privacy Policy and data management tools.</p>
 
-    <h2>7. Children's Privacy</h2>
-    <p>The Bot is not intended for use by children under the age of 13 (or the relevant minimum age in your jurisdiction). We do not knowingly collect personal information from children under this age. If we become aware that we have collected personal information from a child under this age without parental consent, we will take steps to delete that information. If you believe a child has provided us with personal information, please contact us.</p>
+        <h2>7. Data Security</h2>
+        <p>We take reasonable measures to protect the information we collect from loss, theft, misuse, and unauthorized access, disclosure, alteration, and destruction. However, no internet or email transmission is ever fully secure or error-free, so you should take special care in deciding what information you send to us or the Bot.</p>
 
-    <h2>8. Third-Party Services (Discord & Matcherino)</h2>
-    <p>This Privacy Policy applies only to the data processed by our Bot.</p>
-    <ul>
-        <li><strong>Discord:</strong> Your use of Discord is subject to Discord's own Terms of Service and Privacy Policy. We are not responsible for the privacy practices of Discord.</li>
-        <li><strong>Matcherino:</strong> The Bot provides information related to the Matcherino platform. Your use of Matcherino services is subject to Matcherino's Terms of Service and Privacy Policy.</li>
-    </ul>
+        <h2>8. Children's Privacy</h2>
+        <p>The Bot is not intended for use by children under the age of 13 (or the relevant minimum age in your jurisdiction). We do not knowingly collect personal information from children under this age. If we become aware that we have collected personal information from a child under this age without parental consent, we will take steps to delete that information. If you believe a child has provided us with personal information, please contact us.</p>
 
-    <h2>9. Changes to This Privacy Policy</h2>
-    <p>We may update this Privacy Policy from time to time. We will notify you of any significant changes by posting the new Privacy Policy and updating the "Last Updated" date (e.g., via a bot announcement or a message in a designated support server). You are advised to review this Privacy Policy periodically for any changes. Your continued use of the Bot after any changes constitutes your acceptance of the new Privacy Policy.</p>
+        <h2>9. Third-Party Services (Discord & Matcherino)</h2>
+        <p>This Privacy Policy applies only to the data processed by our Bot.</p>
+        <ul>
+            <li><strong>Discord:</strong> Your use of Discord is subject to Discord's own Terms of Service and Privacy Policy. We are not responsible for the privacy practices of Discord.</li>
+            <li><strong>Matcherino:</strong> The Bot provides information related to the Matcherino platform. Your use of Matcherino services is subject to Matcherino's Terms of Service and Privacy Policy.</li>
+        </ul>
 
-    <h2>10. Contact Us</h2>
-    <p>If you have any questions about this Privacy Policy or our data practices, please contact us:</p>
-    <ul>
-        <li>Owner Discord Username: bruhbruhsusbruh</li>
-    </ul>
+        <h2>10. Changes to This Privacy Policy</h2>
+        <p>We may update this Privacy Policy from time to time. We will notify you of any significant changes by posting the new Privacy Policy and updating the "Last Updated" date (e.g., via a bot announcement or a message in a designated support server). You are advised to review this Privacy Policy periodically for any changes. Your continued use of the Bot after any changes constitutes your acceptance of the new Privacy Policy.</p>
 
+        <h2>11. Contact Us</h2>
+        <p>If you have any questions about this Privacy Policy or our data practices, please contact us:</p>
+        <ul>
+            <li>Owner Discord Username: <strong>bruhbruhsusbruh</strong></li>
+            <!-- You might want to add a support server link here if you have one -->
+            <!-- <li>Support Server: <a href="YOUR_SUPPORT_SERVER_INVITE_LINK" target="_blank">Join our Support Server</a></li> -->
+        </ul>
+    </div>
 </body>
 </html>
